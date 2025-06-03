@@ -12,6 +12,6 @@
 
 '''Double Line Comment'''
 
-#Press 'python' in terminal and make it use as a calculator 
+#Enter  'python' in terminal and make it use as a calculator 
 
 
