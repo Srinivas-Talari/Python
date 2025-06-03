@@ -44,6 +44,8 @@ c = 'seenu'
 
 d = "100"
 
+print(c.count('e')) # to count no. of chars in a string
+
 print(c.isalpha()) # checks it is str or not
 
 print(d.isdigit()) # checks it is num or not
