@@ -59,3 +59,14 @@ print('Name:{} age:{}'.format(a,b)) # use as a placeholders
 print(f"Name :{a} age:{b}") # simply use f-strings for above things
 
 
+# Escape Sequence
+
+a = 'artificial\nintelligence'  #\n is a new line 
+
+b = 'seenu\"alari' # for quotes
+
+b = 'seenu\\ talari' # for slash
+
+b = 'seen\tu'  # for tab
+
+print(b)
