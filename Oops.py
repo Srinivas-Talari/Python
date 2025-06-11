@@ -1,41 +1,74 @@
-# class Person:  # class(Blue print for objects )
+# # Oops
 
-#     def __init__(self,name):   # init func or Constructor func to define all properties  
+# class Person:  # Blueprint Class name should be Capitalize format
 
-#         # it is automatically called after object is created
+#    # __init__ refers to constructor
 
-#         self.name = name  # here name is a property# self represents that it belongs to current class
+#    def __init__ (self,name,age,place):  # properties or attributes
+      
+#       self.name = name  # self refers that it belongs to  current class()
 
-#     def doCode (self):  # Methods
+#       self.age = age
+      
+#       self.place = place
 
-#         print(f"{self.name} codes very well")
+#    def getAge(self):  # methods
+
+#       print(f"i am {self.age} years old")
 
 
-# p1 = Person("Srinivas")  # object
+# p1 = Person('srinivas',1000,'ABC')
 
-# p1.doCode()  #  method call
+# print(p1.name)    # calling attributes
+
+# p1.getAge()  # calling methods
 
 
-# Encapsulation
+# # Encapsulation (1.binds attributes and methods 2. It will hide the data)
 
-class User :
+class Bankaccount:
 
-    def __init__(self,name,password):
+   def __init__(self,owner,balance = 2300):
 
-        self.name = name
+      self.owner = owner
 
-        self.__password = password
-    def getName (self):
+      self.__balance = balance # private variable
 
-        print(f"My name is {self.name}")
+   def amountDeposit (self,amount) :
 
-    def getPassword(self):
+      if(amount > 0) :
 
-        print(f"My password is {self.__password}")
+         self.__balance+=amount
 
-p1 = User('seenu',1234)
+         print(f"Deposited {amount} and total balance is {self.__balance}")
+      else:
+            print("Deposit amount must be positive.")
 
-p1.getPassword()
-    
-        
-        
+customer1 = Bankaccount('abc')
+
+# print(customer1.__balance)  # this cant be accessed
+
+customer1.amountDeposit(20000)
+
+
+# Polymorphism  (same methods but different behaviours)
+
+# class Atm_pin :
+
+#    def password(self):
+
+#       return 'Your ATM is correct'
+
+# class Upi_pin :
+
+#    def password(self):
+      
+#       return 'Your UPI pin is correct'
+
+# atm = Atm_pin()
+
+# print(atm.password())
+
+# Upi = Upi_pin()
+
+# print(Upi.password())
