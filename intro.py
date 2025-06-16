@@ -12,6 +12,16 @@
 3.Used in multiple fields(Web Dev,AI/ML)
 '''
 
+# Interpreter & Compilation
+
+'''Both do the same work(source code to machine code) but in a different way i.e the compiler compiles all the source and finds errors in compilation time only but where as interpreter checks code line by line and that too in run-time(during exceution of code)
+
+Compilation langs(c,c++,etc..)
+
+Interpreted langs(JS,Python,etc..)
+
+'''
+
 # PIP
 
 """ It's like a adding functionality to our codes, by using internal or external libraries..So to install Libraries we need a Package Manager called "PIP".(Just as "npm" for Javascript) """
